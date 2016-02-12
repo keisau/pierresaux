@@ -1,0 +1,23 @@
+#footer {
+	@extend %clearfix;
+	padding: 12px 0;
+	font-weight: $normalFontWeight;
+	.left {
+		font-size: 10px;
+		padding-bottom: 24px;
+		a, a:hover, a:visited {
+			font-size: 12px;
+		}
+		a:hover {
+			color: rgb(140, 140, 140);
+		}
+		.larger {
+			font-size: 16px;
+			width: 320px;
+			word-wrap: break-word;
+		}
+	}
+	.right {
+		text-align: right;
+	}
+}

@@ -1,0 +1,60 @@
+/**
+ * dependencies
+ */
+@import '~normalize.css/normalize.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+@import './fontAwesome.scss';
+
+/**
+ * our styles
+ */
+// fonts
+/*
+@font-face {
+	font-family: 'HiraKakuPro';
+	font-style: normal;
+	src: local('HiraKakuPro'),
+	local('HiraKakuProN-W3-AlphaNum'),
+	url('../fonts/HiraKakuProN-W3.woff')
+}
+*/
+// font weight
+$normalFontWeight: 200;
+$labelFontWeight: 400;
+
+// font color
+$normalFontColor: rgb(72, 72, 72);
+$iconFontColor: rgb(128, 128, 128);
+
+// Mixin
+%clearfix {
+	&:before,	&:after {
+		content: ''! important;
+		display: table! important;
+		clear: both! important;
+	}
+}
+
+/**
+ * show/hide overrides
+ */
+.hide {
+	display: none!important;
+}
+.show-block {
+	display: block!important;
+}
+.show-table {
+	display: table!important;
+}
+
+/**
+ * included styles
+ */
+#mainSection {
+	@import './app.scss';
+}
+
+@-ms-viewport{
+  width: device-width;
+}
