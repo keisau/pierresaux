@@ -1,16 +1,27 @@
 #appContainer {
+	font-weight: $normalFontWeight;
+	p {
+		word-wrap: break-word;
+		display: inline-block;
+	}
 	a, a:hover, a:visited {
 		color: $normalFontColor;
 		text-decoration: none;
 	}
 
-	.logo {
+	.logo.fa {
 		a, a:hover, a:visited {
 			text-decoration: none;
 		}
-		padding-right: 8px;
+		margin-right: 18px;
+		@media (min-width: 992px) {
+			margin-right: 10px;
+		}
 		color: $iconFontColor;
-		font-size: 14px;
+		font-size: 24px;
+		@media (min-width: 992px) {
+			font-size: 16px;
+		}
 	}
 
 	.vertical {
@@ -27,17 +38,17 @@
 		text-orientation: upright;
 	}
 
-	/* spinning loader */
-	@import './spinningLoader.scss';
-
 	/* nav bar */
 	@import './navBar/index.scss';
 
 	/* header */
 	@import './header.scss';
 
-	/* not found */
-	@import './notFound.scss';
+	/* index page */
+	@import './index.scss';
+	
+	/* about */
+	@import './about.scss';
 
 	/* footer */
 	@import './footer.scss';

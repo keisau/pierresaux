@@ -1,9 +1,7 @@
 require('../../styles/stylesheet.scss')
 
 import React, { Component, PropTypes } from 'react'
-import NavBar from './NavBar'
-import Header from './Header'
-import Footer from './Footer'
+import { NavBar, Header, Footer } from '.'
 
 export default class extends Component {
 	render() {

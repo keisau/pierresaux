@@ -7,11 +7,7 @@ var srcPath = path.resolve(__dirname, 'src')
 var jsPath = path.resolve(srcPath, 'js')
 var distPath = path.resolve(__dirname, 'pierresaux.github.io')
 
-var locals = {
-	path: [
-		'/'
-	]
-}
+var locals = require('./locals')
 
 module.exports = {
 	entry: [
@@ -36,17 +32,6 @@ module.exports = {
 			{ test: /\.gif$/, loader: 'url-loader?mimetype=image/png' },
 			{ test: /\.json$/, loader: 'json-loader' }
 		]
-	},
-	devServer: {
-		contentBase: distPath,
-		stats: {
-			colors: true
-		},
-		hot: true,
-		inline: true,
-		proxy: false,
-		port: 8090,
-		historyApiFallback: true
 	},
 	plugins: [
 		new ExtractTextPlugin('styles.css'),

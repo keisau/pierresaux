@@ -1,11 +1,11 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { IndexRoute, Route } from 'react-router'
 
-import App from './components/App'
-import NotFound from './components/NotFound'
+import { About, App, Index } from './components'
 
 export default (
 	<Route path='/' component={App} >
-		<Route path='*' component={NotFound}/>
+		<IndexRoute component={Index} />
+		<Route path='about' component={About} />
 	</Route>
 )

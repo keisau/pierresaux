@@ -11,13 +11,13 @@ class NavBar extends Component {
 				<Navbar>
 					<Navbar.Header>
 						<Navbar.Brand>
-							<a href='#'><i className="fa fa-smile-o"></i> Hello!</a>
+							<a href='/'>Kei-sau CHING</a>
 						</Navbar.Brand>
 						<Navbar.Toggle />
 					</Navbar.Header>
 					<Navbar.Collapse>
 						<Nav pullRight>
-							<NavItem eventKey={key} key={key++} href='#'>About</NavItem>
+							<NavItem eventKey={key} key={key++} href='/about/'>About</NavItem>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
