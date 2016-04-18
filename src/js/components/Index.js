@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react'
 import { Grid, Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 export { default as About } from './About'
+export * from './Hobbies'
+
 export { default as App } from './App'
 export { default as Footer } from './Footer'
 export { default as Header } from './Header'

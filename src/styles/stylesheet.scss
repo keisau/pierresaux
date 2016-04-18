@@ -52,6 +52,9 @@ $iconFontColor: rgb(128, 128, 128);
  * included styles
  */
 #mainSection {
+	h1, h2, h3, h4, h5 {
+		color: $iconFontColor;
+	}
 	@import './app.scss';
 }
 

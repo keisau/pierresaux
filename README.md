@@ -12,3 +12,13 @@ Have fun!
 
 ## Making your one!
 I am planning to make a simplified tutorial covering latest version of React, React Router, etc. Or you can dig into this site to get some insight. Perhaps this will be cool enough.
+
+## Running and Testing
+```
+npm run dev-server
+```
+
+## Building
+```
+npm run build
+```

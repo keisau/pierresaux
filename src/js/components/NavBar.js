@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Navbar, Nav, NavItem, ButtonGroup, Button, DropdownButton, MenuItem } from 'react-bootstrap'
 
 class NavBar extends Component {
 	render () {
@@ -17,7 +17,8 @@ class NavBar extends Component {
 					</Navbar.Header>
 					<Navbar.Collapse>
 						<Nav pullRight>
-							<NavItem eventKey={key} key={key++} href='/about/'>About</NavItem>
+							<NavItem eventKey='1' href='/about/'>About</NavItem>
+							<NavItem eventKey='2' href='/hobbies/'>Hobbies</NavItem>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
