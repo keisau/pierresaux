@@ -1,6 +1,11 @@
 #footer {
-	@extend %clearfix;
-	padding: 12px 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: $footerHeight;
+	border-top: $borderSize $borderColor solid;
+	padding-top: $footerTopPadding;
+	margin-top: 48px;
 	font-weight: $normalFontWeight;
 	.left {
 		font-size: 10px;
