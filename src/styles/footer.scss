@@ -1,7 +1,6 @@
 #footer {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
+	clear: both;
+	background-color: $footerBackgroundColor;
 	height: $footerHeight;
 	border-top: $borderSize $borderColor solid;
 	padding-top: $footerTopPadding;

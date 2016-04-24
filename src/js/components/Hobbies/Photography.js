@@ -58,7 +58,7 @@ export class Photography extends Component {
 			<div id='photography' className='container'>
 				<div id='title'>
 					<h3>
-						Photo Gallery
+						Gallery
 					</h3>
 					Photography is one of my hobbies. I usually take snapshots. Well, as you can see, I do love coffee <i className="fa fa-heart-o" aria-hidden="true"></i>.
 				</div>

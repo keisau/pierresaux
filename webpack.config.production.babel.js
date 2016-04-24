@@ -5,7 +5,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 const srcPath = path.resolve(__dirname, 'src')
 const jsPath = path.resolve(srcPath, 'js')
-const distPath = path.resolve(__dirname, 'pierresaux.github.io')
+const distPath = path.resolve(__dirname, '..', 'pierresaux.github.io')
 
 import locals from './locals'
 

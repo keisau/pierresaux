@@ -29,12 +29,14 @@ $iconFontColor: rgb(128, 128, 128);
 $borderColor: rgb(192, 192, 192);
 
 // background color
-$backgroundColor: rgb(236, 236, 236);
+$backgroundColor: white;
+$footerBackgroundColor: rgb(244, 244, 244);
 
 // other constants
 $footerTopPadding: 24px;
 $footerTopMargin: 48px;
 $footerHeight: 192px;
+$appMinHeight: 256px;
 
 // Mixin
 %clearfix {
@@ -61,8 +63,9 @@ $footerHeight: 192px;
 /**
  * included styles
  */
-html, body, section#mainSection {
+html, body {
 	height: 100%;
+	background-color: $footerBackgroundColor;
 }
 
 #mainSection {
