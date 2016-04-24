@@ -4,6 +4,7 @@ import { Grid, Col, Row, ListGroup, ListGroupItem, Image, Tooltip, OverlayTrigge
 const images = [
 	{
 		link: '/hobbies/photography',
+		title: 'Photography',
 		tooltip: (<Tooltip id='hobbiesPhotography'>Photography</Tooltip>),
 		src: require('../../../images/hobbies/1.jpg')
 	}
@@ -32,11 +33,14 @@ export class HobbiesIndex extends Component {
 					}
 
 					const index = parseInt(i) + parseInt(j)
-					const { link, src, tooltip } = images[index]
+					const { link, src, title, tooltip } = images[index]
 					columns.push(
 						<OverlayTrigger key={index} placement='top' overlay={tooltip} >
 							<Col lg={4} md={4} sm={4} >
-								<a href={link} ><Image src={src} thumbnail /></a>
+								<a href={link} >
+									<h3>{title}</h3>
+									<Image src={src} thumbnail />
+								</a>
 							</Col>
 						</OverlayTrigger>
 					)
