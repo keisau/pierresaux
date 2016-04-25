@@ -40,19 +40,25 @@
 	}
 
 	/* nav bar */
-	@import './navBar/index.scss';
+	#content {
+		min-height: $appMinHeight;
+		@import './navBar/index.scss';
 
-	/* header */
-	@import './header.scss';
+		/* header */
+		@import './header.scss';
 
-	/* index page */
-	@import './index.scss';
+		/* index page */
+		@import './index.scss';
 
-	/* about */
-	@import './about.scss';
+		/* about */
+		@import './about.scss';
 
-	/* hobbies */
-	@import './hobbies/index';
+		/* hobbies */
+		@import './hobbies/index';
+
+		/* blog */
+		@import './blog/index';
+	}
 
 	/* footer */
 	@import './footer.scss';

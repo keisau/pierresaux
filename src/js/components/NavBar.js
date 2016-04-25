@@ -19,6 +19,7 @@ class NavBar extends Component {
 						<Nav pullRight>
 							<NavItem eventKey='1' href='/about/'>About</NavItem>
 							<NavItem eventKey='2' href='/hobbies/'>Hobbies</NavItem>
+							<NavItem eventKey='3' href='/blog/'>Blog</NavItem>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

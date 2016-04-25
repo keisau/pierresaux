@@ -3,6 +3,7 @@ module.exports = {
 		'/',
 		'/about',
 		'/hobbies',
-		'/hobbies/photography'
+		'/hobbies/photography',
+		'/blog'
 	]
 }

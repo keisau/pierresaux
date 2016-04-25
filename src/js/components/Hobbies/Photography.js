@@ -20,9 +20,6 @@ for (let i = 1; i <= 6; ++i) {
 const IMAGE_PER_ROW = 3
 
 export class Photography extends Component {
-	componentWillMount() {
-		console.log(images)
-	}
 	renderImages() {
 		let retval = []
 		for (let i in images) {

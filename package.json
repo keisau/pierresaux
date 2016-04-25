@@ -1,11 +1,11 @@
 {
   "name": "home",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test",
   "main": "index.js",
   "scripts": {
     "clean": "./clean.bash",
-    "dev-server": "webpack-dev-server --config ./webpack.config.dev.server.babel.js",
+    "dev-server": "webpack-dev-server -d --config ./webpack.config.dev.server.babel.js",
     "build": "NODE_ENV=production webpack -p --config ./webpack.config.production.babel.js"
   },
   "repository": {
@@ -52,6 +52,7 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "highlight.js": "^9.3.0"
   }
 }

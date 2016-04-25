@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react'
-import { Grid, Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap'
+import React, { Component } from 'react'
+import { Grid, Col, Row } from 'react-bootstrap'
 
+/* re-export */
 export { default as About } from './About'
 export * from './Hobbies'
 
@@ -9,6 +10,7 @@ export { default as Footer } from './Footer'
 export { default as Header } from './Header'
 export { default as NavBar } from './NavBar'
 
+/* export Index component */
 export class Index extends Component {
 	render() {
 		return (

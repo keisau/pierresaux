@@ -5,7 +5,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 const srcPath = path.resolve(__dirname, 'src')
 const jsPath = path.resolve(srcPath, 'js')
-const distPath = path.resolve(__dirname, '..', 'pierresaux.github.io')
+const buildPath = path.resolve(__dirname, '..', 'pierresaux.github.io')
 
 import locals from './locals'
 
@@ -16,7 +16,7 @@ export default {
 	output: {
 		filename: 'bundle.js',
 		libraryTarget: 'umd',
-		path: distPath,
+		path: buildPath,
 		publicPath: '/'
 	},
 	module: {
@@ -43,7 +43,6 @@ export default {
 				'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'dev'),
 			}
 		}),
-		new webpack.optimize.DedupePlugin(),
 		new webpack.ProvidePlugin({
         _: "lodash"
     })

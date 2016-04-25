@@ -3,7 +3,7 @@ import path from 'path'
 
 const srcPath = path.resolve(__dirname, 'src')
 const jsPath = path.resolve(srcPath, 'js')
-const distPath = path.resolve(__dirname, 'pierresaux.github.io')
+const buildPath = path.resolve(__dirname)
 
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		libraryTarget: 'umd',
-		path: distPath,
+		path: buildPath,
 		publicPath: '/'
 	},
 	module: {
@@ -27,13 +27,13 @@ module.exports = {
 			{ test: /\.(ttf|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=assets/[hash:8].[ext]' },
 			{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=assets/[hash:8].[ext]' },
 			{ test: /\.(png|jpe?g|gif)$/, loader: 'url?limit=16384&name=assets/images/[hash:8].[ext]' },
-			{ test: /\.css$/, loader: "style!css!resolve-url?name=[hash:8].[ext]&" },
-			{ test: /\.scss$/, loader: "style!css!sass!resolve-url?name=[hash:8].[ext]&!sass?sourceMap" },
-			{ test: /\.json$/, loader: 'json' }
+			{ test: /\.css$/, loader: 'style!css!resolve-url?name=[hash:8].[ext]' },
+			{ test: /\.scss$/, loader: 'style!css!sass!resolve-url?name=[hash:8].[ext]!sass?sourceMap' },
+			{ test: /\.json$/, loader: 'json' },
 		]
 	},
 	devServer: {
-		contentBase: distPath,
+		contentBase: buildPath,
 		stats: {
 			colors: true
 		},
@@ -48,5 +48,7 @@ module.exports = {
 				'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'dev'),
 			}
 		})
-	]
+	],
+	debug: true,
+	devtool: 'eval-source-map'
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import { IndexRoute, Route } from 'react-router'
 
-import { About, App, Index, Hobbies, HobbiesIndex, Photography } from './components'
+import { About, App, Index, Hobbies, HobbiesIndex, Photography } from '../components'
+
+import blog from './blog'
 
 export default (
 	<Route path='/' component={App} >
@@ -11,5 +13,6 @@ export default (
 			<IndexRoute component={HobbiesIndex} />
 			<Route path='photography' component={Photography} />
 		</Route>
+		{ blog }
 	</Route>
 )
