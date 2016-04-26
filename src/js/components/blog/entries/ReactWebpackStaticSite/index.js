@@ -13,7 +13,7 @@ export default class extends Template {
 		return (
 			<div className=''>
 				<h1>React Webpack Static Site</h1>
-				<h2>TL;DL</h2>
+				<h2>TL;DR</h2>
 				The demo code is <a href='https://github.com/pierresaux/react-webpack-static-site-demo'>here</a>. (in fact this site is also a live demo, but far more complicated)
 				<h2>Background</h2>
 				<p>
