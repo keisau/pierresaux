@@ -1,31 +1,23 @@
 import React, { PropTypes, Component } from 'react'
 import { Navbar, Nav, NavItem, ButtonGroup, Button, DropdownButton, MenuItem } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
-class NavBar extends Component {
-	render () {
-		let key = 0
-		const { board } = this.props
-
-		return (
-			<div className='navBar'>
-				<Navbar>
-					<Navbar.Header>
-						<Navbar.Brand>
-							<a href='/'>Kei-sau CHING</a>
-						</Navbar.Brand>
-						<Navbar.Toggle />
-					</Navbar.Header>
-					<Navbar.Collapse>
-						<Nav pullRight>
-							<NavItem eventKey='1' href='/about/'>About</NavItem>
-							<NavItem eventKey='2' href='/hobbies/'>Hobbies</NavItem>
-							<NavItem eventKey='3' href='/blog/'>Blog</NavItem>
-						</Nav>
-					</Navbar.Collapse>
-				</Navbar>
-			</div>
-		)
-	}
-}
-
-export default NavBar
+export default () => (
+	<div className='navBar'>
+		<Navbar>
+			<Navbar.Header>
+				<Navbar.Brand>
+					<a href='/'>Kei-sau CHING</a>
+				</Navbar.Brand>
+				<Navbar.Toggle />
+			</Navbar.Header>
+			<Navbar.Collapse>
+				<Nav pullRight>
+					<NavItem href='/about' eventKey='1'>About</NavItem>
+					<NavItem href='/hobbies' eventKey='2'>Hobbies</NavItem>
+					<NavItem href='/blog' eventKey='3'>Blog</NavItem>
+				</Nav>
+			</Navbar.Collapse>
+		</Navbar>
+	</div>
+)

@@ -19,26 +19,22 @@ const focusedAreas = [
 	{ name: 'Software Development Methodologies' },
 	{ name: 'Development Environment & Tools' },
 ]
-export default class extends Component {
-	render() {
-		return (
-			<Grid id='about'>
-				<Row>
-					<Col xs={8} md={5} lg={4} xsOffset={2} mdOffset={2} lgOffset={2}>
-						<i className="fa fa-smile-o"></i> Hello!
-						<p>I am a software geek. I have a number of interested areas:</p>
-						<ol>
-							{
-								interestedAreas.map ((area, index) => {
-									return <li key={index}>{area.name}</li>
-								})
-							}
-						</ol>
-						<p>For my hobbies, please visit the Hobbies page :) (which is under construction)</p>
-						<p>For contact methods, please consult the footer below </p>
-					</Col>
-				</Row>
-			</Grid>
-		)
-	}
-}
+export default () => (
+	<Grid id='about'>
+		<Row>
+			<Col xs={8} md={5} lg={4} xsOffset={2} mdOffset={2} lgOffset={2}>
+				<i className="fa fa-smile-o"></i> Hello!
+				<p>I am a software geek. I have a number of interested areas:</p>
+				<ol>
+					{
+						interestedAreas.map ((area, index) => {
+							return <li key={index}>{area.name}</li>
+						})
+					}
+				</ol>
+				<p>For my hobbies, please visit the Hobbies page :) (which is under construction)</p>
+				<p>For contact methods, please consult the footer below </p>
+			</Col>
+		</Row>
+	</Grid>
+)

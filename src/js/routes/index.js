@@ -1,7 +1,7 @@
 import React from 'react'
-import { IndexRoute, Route } from 'react-router'
+import { IndexRoute, Route, Redirect } from 'react-router'
 
-import { About, App, Index, Hobbies, HobbiesIndex, Photography } from '../components'
+import { About, App, Index, Hobbies, HobbiesIndex, Photography, NotFound } from '../components'
 
 import blog from './blog'
 
@@ -14,5 +14,7 @@ export default (
 			<Route path='photography' component={Photography} />
 		</Route>
 		{ blog }
+		<Route path='404' component={NotFound} />
+		<Redirect from='*' to='404' />
 	</Route>
 )

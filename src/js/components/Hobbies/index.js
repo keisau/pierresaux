@@ -11,18 +11,14 @@ const images = [
 ]
 const IMAGE_PER_ROW = 3
 
-export class Hobbies extends Component {
-	render() {
-		return (
-			<div id='hobbies' >
-				{ React.Children.only(this.props.children) }
-			</div>
-		)
-	}
-}
+export const Hobbies = ({ children }) => (
+	<div id='hobbies'>
+		{ React.Children.only(children) }
+	</div>
+)
 
-export class HobbiesIndex extends Component {
-	renderImages() {
+export const HobbiesIndex = () => {
+	const renderImages = () => {
 		let retval = []
 		for (let i in images) {
 			if (i % IMAGE_PER_ROW === 0) {
@@ -53,13 +49,12 @@ export class HobbiesIndex extends Component {
 		}
 		return retval
 	}
-	render() {
-		return (
-			<Grid id='hobbiesMenu'>
-				{ this.renderImages() }
-			</Grid>
-		)
-	}
+
+	return (
+		<Grid id='hobbiesMenu'>
+			{ renderImages() }
+		</Grid>
+	)
 }
 
 export { Photography } from './Photography'

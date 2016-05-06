@@ -19,13 +19,12 @@ for (let i = 1; i <= 6; ++i) {
 
 const IMAGE_PER_ROW = 3
 
-export class Photography extends Component {
-	renderImages() {
+export const Photography = () => {
+	const renderImages = () => {
 		let retval = []
 		for (let i in images) {
 			if (i % IMAGE_PER_ROW === 0) {
 				let columns = []
-				console.log (i)
 				for (let j = 0; j < IMAGE_PER_ROW; j++) {
 					const sum = parseInt(i) + parseInt(j)
 					if (sum >= images.length) {
@@ -50,19 +49,17 @@ export class Photography extends Component {
 		}
 		return retval
 	}
-	render() {
-		return (
-			<div id='photography' className='container'>
-				<div id='title'>
-					<h3>
-						Gallery
-					</h3>
-					Photography is one of my hobbies. I usually take snapshots. Well, as you can see, I do love coffee <i className="fa fa-heart-o" aria-hidden="true"></i>.
-				</div>
-				<Grid >
-					{ this.renderImages() }
-				</Grid>
+	return (
+		<div id='photography' className='container'>
+			<div id='title'>
+				<h3>
+					Gallery
+				</h3>
+				Photography is one of my hobbies. I usually take snapshots. Well, as you can see, I do love coffee <i className="fa fa-heart-o" aria-hidden="true"></i>.
 			</div>
-		)
-	}
+			<Grid >
+				{ renderImages() }
+			</Grid>
+		</div>
+	)
 }
