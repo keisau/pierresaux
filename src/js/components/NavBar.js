@@ -1,6 +1,5 @@
 import React, { PropTypes, Component } from 'react'
 import { Navbar, Nav, NavItem, ButtonGroup, Button, DropdownButton, MenuItem } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
 
 export default () => (
 	<div className='navBar'>

@@ -6,7 +6,8 @@
   "scripts": {
     "clean-dist": "./clean-dist",
     "dev-server": "webpack-dev-server",
-    "build": "NODE_ENV=production node ./node_modules/gulp/bin/gulp.js build:production"
+    "build": "NODE_ENV=production node ./node_modules/gulp/bin/gulp.js build:production",
+    "sync": "aws --profile pierresaux s3 sync . s3://pierresaux-me-site --delete --acl public-read --storage-class STANDARD_IA"
   },
   "repository": {
     "type": "git",
@@ -55,7 +56,6 @@
     "react-prism": "^3.2.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
-    "react-router-bootstrap": "^0.23.0",
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
     "redux-devtools": "^3.2.0",
