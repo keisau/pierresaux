@@ -5,16 +5,22 @@ import { About, App, Index, Hobbies, HobbiesIndex, Photography, NotFound } from 
 
 import blog from './blog'
 
-export default (
-	<Route path='/' component={App} >
-		<IndexRoute component={Index} />
-		<Route path='about' component={About} />
-		<Route path='hobbies' component={Hobbies} >
-			<IndexRoute component={HobbiesIndex} />
-			<Route path='photography' component={Photography} />
-		</Route>
-		{ blog }
-		<Route path='404' component={NotFound} />
-		<Redirect from='*' to='404' />
-	</Route>
-)
+export default {
+	path: '/',
+	component: App,
+	indexRoute: { component: Index },
+	childRoutes: [
+		{ path: 'about', component: About },
+		{
+			path: 'hobbies',
+			component: Hobbies,
+			indexRoute: { component: HobbiesIndex },
+			childRoutes: [
+				{ path: 'photography', component: Photography}
+			]
+		},
+		blog,
+		{ path: '404', component: NotFound },
+		{ path: '*', onEnter: ({ params }, replace) => replace('/404')}
+	]
+}

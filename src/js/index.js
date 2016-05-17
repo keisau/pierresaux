@@ -6,7 +6,9 @@ require('babel-polyfill')
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, browserHistory } from 'react-router'
+import { Provider } from 'react-redux'
 
+import { store } from './redux'
 import routes from './routes'
 
 window.onunload = () => {}
@@ -15,9 +17,12 @@ window.onpageshow = event => {
 		window.location.reload ()
 	}
 }
+
 render(
-	<Router history={browserHistory} >
-	{routes}
-	</Router>
+	<Provider store={store}>
+		<Router history={browserHistory} >
+			{routes}
+		</Router>
+	</Provider>
 	, document.getElementById('mainSection')
 )
