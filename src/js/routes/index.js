@@ -6,21 +6,21 @@ import { About, App, Index, Hobbies, HobbiesIndex, Photography, NotFound } from 
 import blog from './blog'
 
 export default {
-	path: '/',
-	component: App,
-	indexRoute: { component: Index },
-	childRoutes: [
-		{ path: 'about', component: About },
-		{
-			path: 'hobbies',
-			component: Hobbies,
-			indexRoute: { component: HobbiesIndex },
-			childRoutes: [
-				{ path: 'photography', component: Photography}
-			]
-		},
-		blog,
-		{ path: '404', component: NotFound },
-		{ path: '*', onEnter: ({ params }, replace) => replace('/404')}
-	]
+  path: '/',
+  component: App,
+  indexRoute: { component: Index },
+  childRoutes: [
+    { path: 'about', component: About },
+    {
+      path: 'hobbies',
+      component: Hobbies,
+      indexRoute: { component: HobbiesIndex },
+      childRoutes: [
+        { path: 'photography', component: Photography}
+      ]
+    },
+    blog,
+    { path: '404', component: NotFound },
+    { path: '*', onEnter: ({ params }, replace) => replace('/404')}
+  ]
 }

@@ -13,11 +13,11 @@
 // fonts
 /*
 @font-face {
-	font-family: 'HiraKakuPro';
-	font-style: normal;
-	src: local('HiraKakuPro'),
-	local('HiraKakuProN-W3-AlphaNum'),
-	url('../fonts/HiraKakuProN-W3.woff')
+  font-family: 'HiraKakuPro';
+  font-style: normal;
+  src: local('HiraKakuPro'),
+  local('HiraKakuProN-W3-AlphaNum'),
+  url('../fonts/HiraKakuProN-W3.woff')
 }
 */
 // font weight
@@ -42,41 +42,41 @@ $appMinHeight: 256px;
 
 // Mixin
 %clearfix {
-	&:before,	&:after {
-		content: ''! important;
-		display: table! important;
-		clear: both! important;
-	}
+  &:before,  &:after {
+    content: ''! important;
+    display: table! important;
+    clear: both! important;
+  }
 }
 
 /**
  * show/hide overrides
  */
 .hide {
-	display: none!important;
+  display: none!important;
 }
 .show-block {
-	display: block!important;
+  display: block!important;
 }
 .show-table {
-	display: table!important;
+  display: table!important;
 }
 
 /**
  * included styles
  */
 html, body {
-	height: 100%;
-	background-color: $footerBackgroundColor;
+  height: 100%;
+  background-color: $footerBackgroundColor;
 }
 
 #mainSection {
-	height: 100%;
-	h1, h2, h3, h4, h5 {
-		color: $iconFontColor;
-	}
+  height: 100%;
+  h1, h2, h3, h4, h5 {
+    color: $iconFontColor;
+  }
 
-	@import './app.scss';
+  @import './app.scss';
 }
 
 @-ms-viewport{

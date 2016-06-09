@@ -4,9 +4,9 @@
 1. PierreSaux is just one of my favorite nicknames
 2. This is a static site generated with [static-site-generator-webpack-plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
 3. Other techs used include:
-	1. [React](https://github.com/facebook/react)
-	2. [React Router](https://github.com/reactjs/react-router)
-	3. [Bootstrap](https://github.com/twbs/bootstrap)
+  1. [React](https://github.com/facebook/react)
+  2. [React Router](https://github.com/reactjs/react-router)
+  3. [Bootstrap](https://github.com/twbs/bootstrap)
 
 Have fun!
 

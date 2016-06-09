@@ -1,65 +1,65 @@
 #appContainer {
-	background-color: $backgroundColor;
-	font-weight: $normalFontWeight;
-	p {
-		word-wrap: break-word;
-		display: inline-block;
-	}
-	a, a:hover, a:visited {
-		color: $normalFontColor;
-		text-decoration: none;
-	}
+  background-color: $backgroundColor;
+  font-weight: $normalFontWeight;
+  p {
+    word-wrap: break-word;
+    display: inline-block;
+  }
+  a, a:hover, a:visited {
+    color: $normalFontColor;
+    text-decoration: none;
+  }
 
-	.logo.fa {
-		a, a:hover, a:visited {
-			text-decoration: none;
-		}
-		margin-right: 18px;
-		@media (min-width: 992px) {
-			margin-right: 10px;
-		}
-		color: $iconFontColor;
-		font-size: 24px;
-		@media (min-width: 992px) {
-			font-size: 16px;
-		}
-	}
+  .logo.fa {
+    a, a:hover, a:visited {
+      text-decoration: none;
+    }
+    margin-right: 18px;
+    @media (min-width: 992px) {
+      margin-right: 10px;
+    }
+    color: $iconFontColor;
+    font-size: 24px;
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
 
-	.vertical {
-		/* vertical orientation */
-		-ms-writing-mode: tb-rl; /* old syntax. IE */
-		-webkit-writing-mode: vertical-rl;
-		-moz-writing-mode: vertical-rl;
-		-ms-writing-mode: vertical-rl;
-		writing-mode: vertical-rl; /* new syntax */
+  .vertical {
+    /* vertical orientation */
+    -ms-writing-mode: tb-rl; /* old syntax. IE */
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl; /* new syntax */
 
-		-webkit-text-orientation: upright;
-		-moz-text-orientation: upright;
-		-ms-text-orientation: upright;
-		text-orientation: upright;
-	}
+    -webkit-text-orientation: upright;
+    -moz-text-orientation: upright;
+    -ms-text-orientation: upright;
+    text-orientation: upright;
+  }
 
-	/* nav bar */
-	#content {
-		min-height: $appMinHeight;
-		@import './navBar/index.scss';
+  /* nav bar */
+  #content {
+    min-height: $appMinHeight;
+    @import './navBar/index.scss';
 
-		/* header */
-		@import './header.scss';
+    /* header */
+    @import './header.scss';
 
-		/* index page */
-		@import './index.scss';
+    /* index page */
+    @import './index.scss';
 
-		/* about */
-		@import './about.scss';
+    /* about */
+    @import './about.scss';
 
-		/* hobbies */
-		@import './hobbies/index';
+    /* hobbies */
+    @import './hobbies/index';
 
-		/* blog */
-		@import './blog/index';
-	}
+    /* blog */
+    @import './blog/index';
+  }
 
-	/* footer */
-	@import './footer.scss';
+  /* footer */
+  @import './footer.scss';
 }

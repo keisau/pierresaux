@@ -1,8 +1,9 @@
 #blog {
-	#blogIndex {
-		a, a:hover, a:focus, a:visited {
-			font-weight: $labelFontWeight;
-		}
-		@import './entries.scss';
-	}
+  @import './entry.scss';
+  #blogIndex {
+    a, a:hover, a:focus, a:visited {
+      font-weight: $labelFontWeight;
+    }
+    @import './entries.scss';
+  }
 }

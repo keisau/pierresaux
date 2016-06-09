@@ -1,19 +1,19 @@
 .navBar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	z-index: 128;
-	opacity: 0.9;
-	font-weight: $normalFontWeight;
-	nav {
-		border: none;
-		border-radius: 0;
-	}
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 128;
+  opacity: 0.9;
+  font-weight: $normalFontWeight;
+  nav {
+    border: none;
+    border-radius: 0;
+  }
 }
 @media print {
-	.navBar {
-		display: none;
-	}
+  .navBar {
+    display: none;
+  }
 }

@@ -13,16 +13,16 @@ import routes from './routes'
 
 window.onunload = () => {}
 window.onpageshow = event => {
-	if (event.persisted) {
-		window.location.reload ()
-	}
+  if (event.persisted) {
+    window.location.reload ()
+  }
 }
 
 render(
-	<Provider store={store}>
-		<Router history={browserHistory} >
-			{routes}
-		</Router>
-	</Provider>
-	, document.getElementById('mainSection')
+  <Provider store={store}>
+    <Router history={browserHistory} >
+      {routes}
+    </Router>
+  </Provider>
+  , document.getElementById('mainSection')
 )
